@@ -1,13 +1,36 @@
-body {
+/* Genel Stil Ayarları */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6; /* Satır yüksekliğini artırarak okunabilirliği iyileştirir */
+  color: #333; /* Yazı rengi için koyu gri ton */
+  background-color: #ecc7c7; /* Arka plan rengi olarak açık kırmızı */
+  margin: 0; /* Varsayılan margin'i kaldırır */
+}
+
+/* Kod Bloğu Stili */
+code,
+pre {
+  font-family: "Courier New", Courier, monospace; /* Kod bloğu için klasik font */
+  background-color: #eaeaea; /* Kod bloğu arka plan rengi */
+  border-radius: 4px; /* Köşeleri yuvarlatır */
+  padding: 2px 4px; /* İç boşluk ekler */
+  font-size: 0.9em; /* Yazı boyutunu biraz küçültür */
+}
+
+/* Kod Bloğu İçin Ek Stil */
+pre {
+  display: block; /* Kod bloğunu tam genişlikte gösterir */
+  overflow-x: auto; /* Yatay kaydırma çubuğu ekler */
+  padding: 10px; /* İç boşluk ekler */
+  margin: 20px 0; /* Üst ve alt boşluk ekler */
+  background-color: #272c34; /* Kod bloğu arka plan rengi */
+  color: #f8f8f2; /* Kod metin rengi */
+  border: 1px solid #ccc; /* Kenarlık rengi */
+  border-radius: 4px; /* Köşeleri yuvarlatır */
 }
